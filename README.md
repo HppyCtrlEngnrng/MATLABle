@@ -5,4 +5,4 @@ MATLABle is a Wordle-like game, but you guess MATLAB commands instead of words.
 # How To Play
 Download and run 'matlable.m' on your MATLAB.
 The commands used in the game is taken from names of .m files on your MATLAB's search path under `matlabroot`.
-Only commands with names of 5-lowercase letters, like `fplot` or `sound`, is used.
+Only commands with names of 5-lowercase letters, like `fplot` or `sound`, are used.
