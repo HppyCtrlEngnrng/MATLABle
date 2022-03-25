@@ -139,7 +139,11 @@ end
 
 function cmd_dict = makeCommandDict()
     % list MATLAB's search path under matlabroot
-    path_list = string(split(path, ';'));
+    if ispc()
+        path_list = string(split(path, ';'));
+    else
+        path_list = string(split(path, ':'));
+    end
     path_list = path_list(startsWith(path_list, matlabroot));
 
     cmd_dict = cell(length(path_list), 1);
